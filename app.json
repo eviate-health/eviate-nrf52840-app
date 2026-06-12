@@ -4,7 +4,10 @@
     "slug": "eviate-sensor",
     "version": "1.0.0",
     "scheme": "eviate",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
       "bundleIdentifier": "health.eviate.sensor",
       "infoPlist": {
@@ -27,9 +30,19 @@
       [
         "react-native-permissions",
         {
-          "iosPermissions": ["Bluetooth"]
+          "iosPermissions": [
+            "Bluetooth"
+          ]
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d03f7f22-08e9-437e-bf1b-3d5c19c34a2c"
+      }
+    }
   }
 }
