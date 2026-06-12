@@ -34,6 +34,16 @@
             "Bluetooth"
           ]
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 23,
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          }
+        }
       ]
     ],
     "extra": {
