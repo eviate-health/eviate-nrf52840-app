@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Eviate Sensor",
+    "slug": "eviate-sensor",
+    "version": "1.0.0",
+    "scheme": "eviate",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "health.eviate.sensor",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Required to connect to the Eviate wearable sensor.",
+        "NSBluetoothPeripheralUsageDescription": "Required to connect to the Eviate wearable sensor."
+      }
+    },
+    "android": {
+      "package": "health.eviate.sensor",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-permissions",
+        {
+          "iosPermissions": ["Bluetooth"]
+        }
+      ]
+    ]
+  }
+}
